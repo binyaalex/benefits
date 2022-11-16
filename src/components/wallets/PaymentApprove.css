@@ -1,0 +1,31 @@
+.paymentApproveContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.paymentApproveText {
+    padding: 10px 0;
+}
+
+.paymentApproveLine2 {
+    margin-bottom: 10px;
+}
+
+.paymentApproveLine3 {
+    font-weight: bold;
+}
+
+.paymentApproveQr {
+    padding: 20px 0;
+    width: 100%;
+    border-top: 2px solid var(--primary);
+    border-bottom: 2px solid var(--primary);
+    margin: 20px 0;
+}
+
+.paymentApproveCode {
+    padding: 10px 0;
+}

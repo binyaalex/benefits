@@ -1,0 +1,18 @@
+.paymentHestoryTemplate {
+  padding: 20px 0;
+}
+.paymentHestoryCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.paymentHestoryTemplate .cartProduct-box__img {
+  background-position: top;
+}
+
+/* @media only screen and (max-width: 991px) { */
+.paymentHestoryCards {
+  grid-template-columns: 1fr;
+}
+/* } */
