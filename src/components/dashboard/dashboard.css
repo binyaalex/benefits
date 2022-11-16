@@ -600,7 +600,7 @@ div[data-arrow="right"] {
 
 .hotBenefitImg {
   position: relative;
-  height: 64%;
+  height: 80%;
   border-bottom: 1px solid rgb(211, 211, 211, 0.5);
   margin-bottom: 10px;
 }
@@ -608,7 +608,8 @@ div[data-arrow="right"] {
 .hotBenefitImg>img {
   width: 100%;
   object-fit: cover;
-  border-radius: 14px;
+  aspect-ratio: 1 / 1;
+  border-radius: 14px 14px 0 0;
 }
 
 .hotBenefitCategory {
@@ -633,7 +634,7 @@ div[data-arrow="right"] {
 
 .hotBenefitContent .old {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   padding: 0 5%;
 }

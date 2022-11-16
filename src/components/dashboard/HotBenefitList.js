@@ -9,9 +9,10 @@ import { MdLocationOn } from "react-icons/md";
 import { getMerchants } from "../../redux/actions-exporter";
 
 // import hotBenefit1 from "../../assets/images/hotBenefit1.png";
-import hotBenefit1 from "../../assets/images/hotBenefit1.jpg";
-import hotBenefit2 from "../../assets/images/hotBenefit2.jpg";
-import hotBenefit3 from "../../assets/images/hotBenefit3.jpg";
+import hotBenefit1 from "../../assets/images/piza.jpg";
+import hotBenefit2 from "../../assets/images/morning.jpg";
+import hotBenefit3 from "../../assets/images/burger.jpg";
+import hotBenefit4 from "../../assets/images/asian.jpg";
 
 export default function HotBenefitList(props) {
   const navigate = useNavigate();
@@ -20,7 +21,7 @@ export default function HotBenefitList(props) {
   // const merchants = useSelector((state) => state.merchant.merchants);
   const hotBenefitsArr = [
     {
-      title: "מזון לתינוקות",
+      title: "פיצות",
       price: 49,
       image: hotBenefit1,
       category: "אוכל",
@@ -29,7 +30,7 @@ export default function HotBenefitList(props) {
       new: 29,
     },
     {
-      title: "קפה נמס",
+      title: "ארוחות בוקר",
       price: 34,
       image: hotBenefit2,
       category: "אוכל",
@@ -38,7 +39,7 @@ export default function HotBenefitList(props) {
       new: 24,
     },
     {
-      title: "אייר ביס בצל",
+      title: "המבורגרים",
       price: 11,
       image: hotBenefit3,
       category: "אוכל",
@@ -47,32 +48,32 @@ export default function HotBenefitList(props) {
       new: 7,
     },
     {
-      title: "מזון לתינוקות",
+      title: "אוכל אסייתי",
       price: 49,
-      image: hotBenefit1,
+      image: hotBenefit4,
       category: "אוכל",
       coins: 20,
       city: "ירושלים",
       new: 29,
     },
-    {
-      title: "קפה נמס",
-      price: 34,
-      image: hotBenefit2,
-      category: "אוכל",
-      coins: 10,
-      city: "ירושלים",
-      new: 24,
-    },
-    {
-      title: "אייר ביס בצל",
-      price: 11,
-      image: hotBenefit3,
-      category: "אוכל",
-      coins: 4,
-      city: "ירושלים",
-      new: 7,
-    }
+    // {
+    //   title: "קפה נמס",
+    //   price: 34,
+    //   image: hotBenefit2,
+    //   category: "אוכל",
+    //   coins: 10,
+    //   city: "ירושלים",
+    //   new: 24,
+    // },
+    // {
+    //   title: "אייר ביס בצל",
+    //   price: 11,
+    //   image: hotBenefit3,
+    //   category: "אוכל",
+    //   coins: 4,
+    //   city: "ירושלים",
+    //   new: 7,
+    // }
   ];
   useEffect(() => {
     dispatch(getMerchants());
@@ -164,29 +165,29 @@ export default function HotBenefitList(props) {
                   >
                     <div className="hotBenefitImg">
                       <img src={item.image} alt="My Awesome" />
-                      <div className="hotBenefitCategory">{item.category}</div>
+                      {/* <div className="hotBenefitCategory">{item.category}</div> */}
                     </div>
                     <div className="hotBenefitContent">
                       <div className="old">
                         <h6 className="hotBenefitNew">{item.title}</h6>
-                        <h6 className="hotBenefitOld price">{item.price} ₪</h6>
+                        {/* <h6 className="hotBenefitOld price">{item.price} ₪</h6> */}
                       </div>
-                      <div className="hotLocation">
+                      {/* <div className="hotLocation">
                         <MdLocationOn />
                         <h6 className="hotBenefitOld">{item.city}</h6>
-                      </div>
+                      </div> */}
 
                       {/* <div className="hotLocation">
                       <LocationOnIcon />
                       <h6 className="hotLocation">{item.city}</h6>
                     </div> */}
 
-                      <div className="new">
+                      {/* <div className="new">
                         <h5 className="hotBenefitNew">
                           ₪{item.new} + {item.coins}
                           <GiTwoCoins />
                         </h5>
-                      </div>
+                      </div> */}
                     </div>
                   </li>
                 </>
