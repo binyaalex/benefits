@@ -452,13 +452,13 @@ export default function Dashboard() {
                             <span className="product-box__price">
                               {/* {product?.oldPrice && ( */}
                               <>
-                                <s>₪{product?.price + product?.credit}</s>&nbsp;
+                                <div className="product-box__price bold">₪{product?.price}</div>
                                 {/* <s>{product.oldPrice}₪</s>&nbsp; */}
                               </>
                               {/* )} */}
                             </span>
                           </div>
-                          <div className="product-box__priceDiv">
+                          {/* <div className="product-box__priceDiv">
                             <span className="product-box__price bold">
                               {product?.credit && (
                                 <>
@@ -467,7 +467,7 @@ export default function Dashboard() {
                               )}
                               ₪{product?.price || 0}
                             </span>
-                          </div>
+                          </div> */}
                           {/*<h5 className="product-box__name">*/}
                           {/*  3 {t("boxSimple")}{" "}*/}
                           {/*</h5>*/}
