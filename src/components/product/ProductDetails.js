@@ -55,18 +55,18 @@ export default function ProductDetails() {
                 <div className="productDetails-heading">
                   <h5 className="productDetails-title">{product.title}</h5>
                   <h6 className="productDetails-price">
-                    {product?.oldPrice && (
+                    {/* {product?.oldPrice && (
                       <>
                         <s>₪{product.oldPrice}</s>&nbsp;
                       </>
-                    )}
+                    )} */}
                     <span>₪{product?.price || 0}</span>
-                    {product?.credit && (
+                    {/* {product?.credit && (
                       <>
                         {" "}
                         + {product.credit} <GiTwoCoins />
                       </>
-                    )}
+                    )} */}
                   </h6>
                 </div>
                 <div
