@@ -1,15 +1,21 @@
 .top {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--primary);
   position: fixed;
   z-index: 10;
   max-width: 428px;
+  width: 100%;
 }
 
-.top>img {
+.top>.benefitsLogo {
   width: 40%;
+  margin: 5%;
+}
+
+.top>.lmLogo {
+  width: 10%;
   margin: 5%;
 }
 

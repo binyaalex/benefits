@@ -7,6 +7,7 @@ import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
 import Button from "@mui/material/Button";
 import logo from "../../assets/images/logo.png"
+import lmLogo from "../../assets/images/lm.png"
 import logo2 from "../../assets/images/logo.jpg"
 import MenuIcon from "@mui/icons-material/Menu";
 import { GiTwoCoins } from "react-icons/gi";
@@ -114,35 +115,37 @@ const Header = () => {
     return (
         <div className="header">
             <div className="top">
-                <div className='menuIcon'>
+                {/* <div className='menuIcon'>
                     <MenuIcon
                         fontSize="large"
                         sx={{ color: 'var(--secondary)' }}
                     />
-                </div>
-                <div className='menuIcon'>
+                </div> */}
+                {/* <div className='menuIcon'>
                     <PersonIcon
                         fontSize="large"
                         sx={{ color: 'var(--secondary)' }}
                     />
-                </div>
-                <img src={logo} />
-                <div className="menuIcon">
+                </div> */}
+                <img className='lmLogo' src={lmLogo} />
+
+                <img className='benefitsLogo' src={logo} />
+                {/* <div className="menuIcon">
                     <LanguageSelect />
-                </div>
-                <div className='menuIcon' onClick={openSearch}>
+                </div> */}
+                {/* <div className='menuIcon' onClick={openSearch}>
                     <SearchOutlinedIcon
                         fontSize="large"
                         sx={{ color: 'var(--secondary)' }}
 
                     />
-                </div>
+                </div> */}
             </div>
             {/* { */}
             {/* isFull ? */}
             <div className="bottom">
                 <div className="par">
-                    <div className="balanceH">מטבע שוק</div>
+                    <div className="balanceH">יתרת ארנק</div>
                     <div className="balanceAmount">
                         {user?.credit?.toFixed(1) || 1200}
 
@@ -152,19 +155,19 @@ const Header = () => {
                 </div>
 
 
-                <div className='collect' onClick={openInfo}>
-                    <InfoIcon />
+                <div className='collect' onClick={openSearch}>
+                    {/* <InfoIcon /> */}
                     <span>
-                        איך לצבור
+                        חיפוש
                     </span>
-                    <GiTwoCoins
+                    <SearchOutlinedIcon
                         fontSize="large"
                         sx={{ color: 'var(--primary)' }}
                     />
 
-                    {/* <KeyboardArrowLeftIcon */}
-                    {/* sx={{ color: 'var(--primary)' }} */}
-                    {/* /> */}
+                    {/* <KeyboardArrowLeftIcon
+                    sx={{ color: 'var(--primary)' }}
+                    /> */}
                 </div>
                 <div className="notificationBlock">
                     <Button className="dropBtn">
