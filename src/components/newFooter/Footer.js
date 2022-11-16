@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { FiHome } from "react-icons/fi";
 import { AiOutlineTags } from "react-icons/ai";
 import { BsWallet2 } from "react-icons/bs";
+import { AiOutlineGift } from "react-icons/ai";
 
 import GrayIcon from "./GrayIcon";
 import widgetHelper from "../../helpers/widget";
@@ -21,11 +22,11 @@ const containerArr = [
     link: "/unusedbenefits",
     title: "טרם מומשו",
   },
-  // {
-  //   img: <DinnerDiningOutlinedIcon />,
-  //   link: "",
-  //   title: "מסעדות",
-  // },
+  {
+    img: <AiOutlineGift />,
+    link: "#",
+    title: "שי קבוצתי",
+  },
   {
     img: <BsWallet2 />,
     link: "/wallet",
