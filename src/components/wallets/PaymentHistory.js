@@ -6,6 +6,8 @@ import { useTranslation } from "react-i18next";
 import Header from "../header/Header";
 
 import hotBenefit1 from "../../assets/images/hotBenefit1.png";
+import lmLogo from "../../assets/images/lm.png"
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import "../wallets/paymentHistory.css";
 
 function PaymentHistory() {
@@ -14,37 +16,37 @@ function PaymentHistory() {
 
   const history = [
     {
-      image: hotBenefit1,
-      name: "עידן אלתרמן",
+      image: lmLogo,
+      name: "שי לכבוד חג הפסח",
+      detail: "11.12.2021 16:05",
+      price: "150",
+      type: "card",
+      cardno: "**** *****",
+    },
+    {
+      image: lmLogo,
+      name: "שי לכבוד חג חנוכה",
       detail: "11.12.2021 16:05",
       price: "50",
       type: "card",
       cardno: "**** *****",
     },
     {
-      image: hotBenefit1,
-      name: "עידן אלתרמן",
+      image: lmLogo,
+      name: "שי לכבוד ראש השנה",
       detail: "11.12.2021 16:05",
-      price: "50",
+      price: "200",
       type: "card",
       cardno: "**** *****",
     },
-    {
-      image: hotBenefit1,
-      name: "עידן אלתרמן",
-      detail: "11.12.2021 16:05",
-      price: "50",
-      type: "card",
-      cardno: "**** *****",
-    },
-    {
-      image: hotBenefit1,
-      name: "עידן אלתרמן",
-      detail: "11.12.2021 16:05",
-      price: "50",
-      type: "card",
-      cardno: "**** *****",
-    },
+    // {
+    //   image: hotBenefit1,
+    //   name: "עידן אלתרמן",
+    //   detail: "11.12.2021 16:05",
+    //   price: "50",
+    //   type: "card",
+    //   cardno: "**** *****",
+    // },
     // {
     //   image: Mastercard,
     //   name: t("purchases"),
@@ -89,9 +91,9 @@ function PaymentHistory() {
                 navigate("/wallet");
               }}
             >
-              <ArrowBackIcon />
+              <ArrowForwardIosIcon />
             </span>
-            <h1 className="templateTitle">{t("allp")}</h1>
+            <h1 className="templateTitle">יתרת ארנק</h1>
           </div>
           <ul className="paymentHestoryCards">
             {history.length > 0 &&
@@ -110,11 +112,11 @@ function PaymentHistory() {
                         style={{ backgroundImage: `url(${item.image})` }}
                       ></div>
                       <div className="cartProduct-box__info">
-                        <h6 className="cartProduct-box__brand">{item.name}</h6>
                         <h5 className="cartProduct-box__name">{item.detail}</h5>
-                        {item.type === "card" && <h5>{item.cardno}</h5>}
+                        {/* {item.type === "card" && <h5>{item.cardno}</h5>} */}
                       </div>
                     </div>
+                    <h6 className="cartProduct-box__brand">{item.name}</h6>
                     <div className="cartProduct-rightBlock">
                       <div className="cartProduct-box__brandBox">
                         <span className="cartProduct-box__price">

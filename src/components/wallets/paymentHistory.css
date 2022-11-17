@@ -16,3 +16,7 @@
   grid-template-columns: 1fr;
 }
 /* } */
+
+.paymentHestoryCards .cartProduct-box {
+  width: unset;
+}

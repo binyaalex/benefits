@@ -7,6 +7,7 @@ import StoreIcon from "@mui/icons-material/Store";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoIosRestaurant } from "react-icons/io";
 import { GiClothes } from "react-icons/gi";
+import { FaWallet } from "react-icons/fa";
 
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -93,16 +94,17 @@ export default function Wallets({setVendors}) {
               <LocalAtmIcon />
               <h6 className="walletIconsBox-title">{t("Load E-Credit")}</h6>
             </div> */}
-            {/* <div
+            <div
               className="walletIconsBox isLink"
+              style={{margin: '0 50px'}}
               onClick={() => {
-                navigate("/creaditcard");
+                navigate("/paymenthistory");
               }}
             >
-              <CreditScoreIcon />
-              <h6 className="walletIconsBox-title">{t("creditCardOorder")}</h6>
-            </div> */}
-            <div
+              <FaWallet />
+              <h6 className="walletIconsBox-title">יתרת ארנק</h6>
+            </div>
+            {/* <div
               className="walletIconsBox isLink"
               style={{margin: '0 50px'}}
               onClick={() => {
@@ -113,7 +115,7 @@ export default function Wallets({setVendors}) {
               <h6 className="walletIconsBox-title">
                 {t("pay at the buisness")}
               </h6>
-            </div>
+            </div> */}
             <div
               className="walletIconsBox isLink"
               onClick={() => {
