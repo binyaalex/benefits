@@ -32,8 +32,8 @@ const CouponsList = ({ couponsSlidesPerView }) => {
             // discountType: 'percent',
             subTitle: "וקבל מתנה שווה!",
             img: win,
-            bg: "var(--secondary)",
-            color: "var(--primary)"
+            color: "white",
+            bg: "var(--bg)"
         },
         // {
         //     title: "הטבת השבוע",

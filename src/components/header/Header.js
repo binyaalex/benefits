@@ -7,7 +7,7 @@ import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import NotificationsNoneIcon from "@material-ui/icons/NotificationsNone";
 import Button from "@mui/material/Button";
 import logo from "../../assets/images/logo.png"
-import lmLogo from "../../assets/images/lm.png"
+import lmLogo from "../../assets/images/lm.jpg"
 import logo2 from "../../assets/images/logo.jpg"
 import MenuIcon from "@mui/icons-material/Menu";
 import { GiTwoCoins } from "react-icons/gi";

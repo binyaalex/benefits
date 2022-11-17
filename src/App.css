@@ -1,14 +1,12 @@
 html {
   --gray: #bdc4d1;
   --lightgray: #e1e4ea;
-  --primary: #1f513e !important;
+  /* --primary: #1f513e !important;
   --secondary: #f6c749 !important;
-  --bg: #008c45 !important;
-  /* --lightblue: #17A2B8;
-  --blue: #1976d2;
-  --blue3: #007bff;
-    --blue2: #00a9d6;
-    --dark: #00374d; */
+  --bg: #008c45 !important; */
+  --bg: #315E87 !important;
+  --secondary: #19DABD !important;
+  --primary: #00386B !important;
 }
 
 body {
@@ -446,7 +444,7 @@ iframe {
 .loader {
   height: 100vh;
   width: 100%;
-  background-color: var(--bg);
+  background-color: var(--lightgray);
   display: flex;
   flex-direction: column;
   justify-content: end;
