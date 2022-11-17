@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import Header from "../header/Header";
 
 import hotBenefit1 from "../../assets/images/hotBenefit1.png";
-import lmLogo from "../../assets/images/lm.png"
+import lmLogo from "../../assets/images/lm.jpg"
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import "../wallets/paymentHistory.css";
 

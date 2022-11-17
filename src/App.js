@@ -55,7 +55,7 @@ import ms from "./assets/images/logo.png"
 import { CircularProgress } from '@mui/material'
 
 function App(props) {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [newMoney, setNewMoney] = useState(0);
   const [vendors, setVendors] = useState();
 
@@ -67,10 +67,10 @@ function App(props) {
   }, [dispatch]); // eslint-disable-line
 
   useEffect(() => {
-    setLoading(true);
+    // setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 300);
+    }, 3000);
   }, []);
 
   return (

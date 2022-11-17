@@ -444,7 +444,10 @@ iframe {
 .loader {
   height: 100vh;
   width: 100%;
-  background-color: var(--lightgray);
+  /* background-color: var(--lightgray); */
+  background-image: url("./assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -453,7 +456,7 @@ iframe {
 }
 
 .loader .mainImg {
-  width: 80%;
+  width: 50%;
   /* margin: 20% 0; */
 }
 
