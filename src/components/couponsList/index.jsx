@@ -27,7 +27,7 @@ const CouponsList = ({ couponsSlidesPerView }) => {
             bg: "var(--bg)"
         },
         {
-            title: "הזמן חברים",
+            title: "הזמן כרטיס אשראי",
             // discountValue: 40,
             // discountType: 'percent',
             subTitle: "וקבל מתנה שווה!",

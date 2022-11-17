@@ -50,7 +50,7 @@ import { getUser } from "./redux/API/user/user.action";
 import "./App.css";
 import { ToastContainer } from "react-toastify";
 import Sales from "./components/sales/Sales";
-import max from "./assets/images/max.png"
+import elad from "./assets/images/elad2.jpg"
 import ms from "./assets/images/logo.png"
 import { CircularProgress } from '@mui/material'
 
@@ -88,7 +88,7 @@ function App(props) {
               <div className="loaderText">
                 Powered By
               </div>
-              <img src={max} className="subImg" />
+              <img src={elad} className="subImg" />
             </div>
           ) : (
             <div className="PageDad">

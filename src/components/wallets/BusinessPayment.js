@@ -86,8 +86,8 @@ export default function BusinessPayment({ credit = false, newMoney, setNewMoney 
             <h3 className="loadMoneyCard-text">
               {t("payment amount after take")}{" "}
               {/* {amountToPay.toFixed(0) - newMoney?.toFixed(0) || 0} */}
-              {amountToPay - newMoney || 0}
-              <GiTwoCoins />
+              {/* {amountToPay - newMoney || 0} */}
+              {/* <GiTwoCoins /> */}
               {/* {t("shuk coins")} */}
 
             </h3>

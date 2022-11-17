@@ -21,7 +21,7 @@ export default function HotBenefitList(props) {
   // const merchants = useSelector((state) => state.merchant.merchants);
   const hotBenefitsArr = [
     {
-      title: "פיצות",
+      title: "שוברי פיצות",
       price: 49,
       image: hotBenefit1,
       category: "אוכל",
@@ -30,7 +30,7 @@ export default function HotBenefitList(props) {
       new: 29,
     },
     {
-      title: "ארוחות בוקר",
+      title: "שוברי ארוחות בוקר",
       price: 34,
       image: hotBenefit2,
       category: "אוכל",
@@ -39,7 +39,7 @@ export default function HotBenefitList(props) {
       new: 24,
     },
     {
-      title: "המבורגרים",
+      title: "שוברי המבורגרים",
       price: 11,
       image: hotBenefit3,
       category: "אוכל",
@@ -48,7 +48,7 @@ export default function HotBenefitList(props) {
       new: 7,
     },
     {
-      title: "אוכל אסייתי",
+      title: "שוברי אוכל אסייתי",
       price: 49,
       image: hotBenefit4,
       category: "אוכל",
@@ -154,44 +154,44 @@ export default function HotBenefitList(props) {
         <ul className="categoryList">
           {hotBenefitsArr.length > 0
             ? hotBenefitsArr.map((item) => (
-                <>
-                  <li
-                    // onClick={() => {
-                    //   navigate(`/vendor/${item.id}`, {
-                    //     state: { id: item.id },
-                    //   });
-                    // }}
-                    className="hotBenefit isLink"
-                  >
-                    <div className="hotBenefitImg">
-                      <img src={item.image} alt="My Awesome" />
-                      {/* <div className="hotBenefitCategory">{item.category}</div> */}
+              <>
+                <li
+                  // onClick={() => {
+                  //   navigate(`/vendor/${item.id}`, {
+                  //     state: { id: item.id },
+                  //   });
+                  // }}
+                  className="hotBenefit isLink"
+                >
+                  <div className="hotBenefitImg">
+                    <img src={item.image} alt="My Awesome" />
+                    {/* <div className="hotBenefitCategory">{item.category}</div> */}
+                  </div>
+                  <div className="hotBenefitContent">
+                    <div className="old">
+                      <h6 className="hotBenefitNew">{item.title}</h6>
+                      {/* <h6 className="hotBenefitOld price">{item.price} ₪</h6> */}
                     </div>
-                    <div className="hotBenefitContent">
-                      <div className="old">
-                        <h6 className="hotBenefitNew">{item.title}</h6>
-                        {/* <h6 className="hotBenefitOld price">{item.price} ₪</h6> */}
-                      </div>
-                      {/* <div className="hotLocation">
+                    {/* <div className="hotLocation">
                         <MdLocationOn />
                         <h6 className="hotBenefitOld">{item.city}</h6>
                       </div> */}
 
-                      {/* <div className="hotLocation">
+                    {/* <div className="hotLocation">
                       <LocationOnIcon />
                       <h6 className="hotLocation">{item.city}</h6>
                     </div> */}
 
-                      {/* <div className="new">
+                    {/* <div className="new">
                         <h5 className="hotBenefitNew">
                           ₪{item.new} + {item.coins}
                           <GiTwoCoins />
                         </h5>
                       </div> */}
-                    </div>
-                  </li>
-                </>
-              ))
+                  </div>
+                </li>
+              </>
+            ))
             : t("No merchants")}
         </ul>
       </ScrollingCarousel>

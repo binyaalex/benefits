@@ -19,7 +19,7 @@ import { sendMoney } from "../../redux/actions-exporter";
 
 import "../wallets/wallets.css";
 
-export default function Wallets({setVendors}) {
+export default function Wallets({ setVendors }) {
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -96,7 +96,7 @@ export default function Wallets({setVendors}) {
             </div> */}
             <div
               className="walletIconsBox isLink"
-              style={{margin: '0 50px'}}
+              // style={{ margin: '0 50px' }}
               onClick={() => {
                 navigate("/paymenthistory");
               }}
@@ -104,9 +104,9 @@ export default function Wallets({setVendors}) {
               <FaWallet />
               <h6 className="walletIconsBox-title">יתרת ארנק</h6>
             </div>
-            {/* <div
+            <div
               className="walletIconsBox isLink"
-              style={{margin: '0 50px'}}
+              // style={{ margin: '0 50px' }}
               onClick={() => {
                 navigate("/businesspayment");
               }}
@@ -115,7 +115,7 @@ export default function Wallets({setVendors}) {
               <h6 className="walletIconsBox-title">
                 {t("pay at the buisness")}
               </h6>
-            </div> */}
+            </div>
             <div
               className="walletIconsBox isLink"
               onClick={() => {

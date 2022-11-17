@@ -461,5 +461,6 @@ iframe {
 }
 
 .loader .subImg {
-  width: 20%
+  width: 30%;
+  border-radius: 50%;
 }
