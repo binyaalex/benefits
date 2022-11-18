@@ -50,7 +50,7 @@ import { getUser } from "./redux/API/user/user.action";
 import "./App.css";
 import { ToastContainer } from "react-toastify";
 import Sales from "./components/sales/Sales";
-import elad from "./assets/images/elad2.jpg"
+import elad from "./assets/images/elad.png"
 import ms from "./assets/images/logo.png"
 import { CircularProgress } from '@mui/material'
 
